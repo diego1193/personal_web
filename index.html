@@ -715,36 +715,38 @@
         Selected Works
       </h2>
 
-      <div class="reveal">
-        <div class="bg-white border-4 border-black shadow-hard-xl relative overflow-hidden">
-          <!-- decorative corner squares -->
-          <div class="absolute top-0 left-0 w-6 h-6 bg-neo-yellow border-r-4 border-b-4 border-black"></div>
-          <div class="absolute top-0 right-0 w-6 h-6 bg-neo-pink border-l-4 border-b-4 border-black"></div>
-          <div class="absolute bottom-0 left-0 w-6 h-6 bg-neo-blue border-r-4 border-t-4 border-black"></div>
-          <div class="absolute bottom-0 right-0 w-6 h-6 bg-neo-green border-l-4 border-t-4 border-black"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
-          <div class="flex flex-col items-center justify-center py-24 px-8 text-center gap-8">
-            <div class="flex items-center gap-3 bg-neo-black px-5 py-2 border-2 border-black shadow-hard-sm">
-              <span class="w-2 h-2 rounded-full bg-neo-green animate-pulse inline-block"></span>
-              <span class="font-mono text-neo-green text-xs font-bold uppercase tracking-widest">SYSTEM_STATUS: BUILDING</span>
+        <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+          <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6 group-hover:shadow-none transition-all">
+            <img src="DiegoDev/Assets/images/grocery.png" alt="Vivid Grocery - Fresh groceries delivered fast"
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-4xl font-black uppercase mb-2 group-hover:text-neo-green transition-colors glitch-hover" data-i18n="p_vivid_name">Vivid Grocery</h3>
+              <p class="font-mono text-sm mb-4 max-w-xs" data-i18n="p_vivid_desc">Online grocery delivery platform with product catalog, cart management, and a streamlined checkout experience.</p>
+              <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                <span class="bg-neo-black text-white px-2 py-1">Web App</span>
+                <span class="bg-neo-black text-white px-2 py-1">E-commerce</span>
+                <span class="bg-neo-black text-white px-2 py-1">Delivery</span>
+              </div>
             </div>
-
-            <p class="text-[18vw] md:text-[12vw] font-black uppercase leading-none tracking-tighter select-none"
-              style="-webkit-text-stroke: 4px black; color: transparent;" data-i18n="coming_soon">
-              COMING SOON
-            </p>
-
-            <p class="font-mono text-lg md:text-xl max-w-xl text-gray-600 border-l-4 border-neo-yellow pl-4 text-left" data-i18n="projects_placeholder">
-              Projects are currently under development. Check back soon or follow my GitHub for updates.
-            </p>
-
-            <a href="https://github.com/diego1193?tab=repositories" target="_blank"
-              class="inline-flex items-center gap-2 bg-neo-black text-white px-8 py-4 font-bold font-mono text-base hover:bg-neo-yellow hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover"
-              data-i18n="projects_btn">
-              VIEW ALL REPOS ON GITHUB
+            <a href="https://delivery.diegocabrera.dev/delivery" target="_blank"
+              class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm flex-shrink-0">
+              <i class="ri-arrow-right-up-line text-2xl"></i>
             </a>
           </div>
-        </div>
+        </article>
+
+      </div>
+
+      <div class="mt-16 text-center reveal">
+        <a href="https://github.com/diego1193?tab=repositories" target="_blank"
+          class="inline-flex items-center gap-2 bg-neo-black text-white px-8 py-4 font-bold font-mono text-base hover:bg-neo-yellow hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover"
+          data-i18n="projects_btn">
+          VIEW ALL REPOS ON GITHUB
+        </a>
       </div>
 
     </div>
@@ -1008,6 +1010,8 @@
 
         projects_title: "Selected Works",
         projects_placeholder: "Projects are currently under development. Check back soon or follow my GitHub for updates.",
+        p_vivid_name: "Vivid Grocery",
+        p_vivid_desc: "Online grocery delivery platform with product catalog, cart management, and a streamlined checkout experience.",
         p1_name: "RAG Knowledge Assistant",
         p1_desc: "Retrieval-Augmented Generation with embeddings + vector search to answer questions grounded in your docs.",
         p2_name: "MCP Tool Orchestrator",
@@ -1091,6 +1095,8 @@
 
         projects_title: "Proyectos Seleccionados",
         projects_placeholder: "Los proyectos están actualmente en desarrollo. Vuelve pronto o sígueme en GitHub para novedades.",
+        p_vivid_name: "Vivid Grocery",
+        p_vivid_desc: "Plataforma de entrega de comestibles en línea con catálogo de productos, gestión de carrito y experiencia de pago simplificada.",
         p1_name: "Asistente RAG de Conocimiento",
         p1_desc: "RAG con embeddings + búsqueda vectorial para responder preguntas basadas en documentos reales.",
         p2_name: "Orquestador de Herramientas (MCP)",
