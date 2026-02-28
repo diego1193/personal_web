@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/delivery/:path*", "destination": "https://web-delivery-ge4p.vercel.app/delivery/:path*" },
+    { "source": "/delivery", "destination": "https://web-delivery-ge4p.vercel.app/delivery" },
+    { "source": "/api/:path*", "destination": "https://web-delivery-ge4p.vercel.app/api/:path*" }
+  ]
+}
